@@ -1,0 +1,38 @@
+
+* {
+    box-sizing: border-box;
+}
+
+.jumbotron {
+    height: 200px;
+}
+h3{
+    position: absolute;
+    left: 500px;
+    font-family: 'Adamina', serif;
+}
+#train-font{
+    position: absolute;
+    top: 150px;
+    left: 750px;
+}
+/*
+thead{
+    background-color: #2290C9;
+}
+*/
+table{
+    
+}
+.outline{
+    background-color: #2290C9;
+    
+    color: white;
+}
+.container {
+    border: 1px solid #2290C9;
+    margin-bottom: 10px;
+}
+
+
+
