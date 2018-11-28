@@ -29,6 +29,7 @@
             First_Train_Time :getFirstTrainTime,
             Destination : getDest
         })
+        $("input").val(" ");
 
 
     });
