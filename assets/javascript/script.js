@@ -56,21 +56,29 @@
             var getDbFreq = getChildRef.Frequency;
             var getDbFirstTime = getChildRef.First_Train_Time;
         // convert first time
-            var convertFirstTime = moment(getDbFirstTime,"HH:mm").subract(1,"years");
+            var convertFirstTime = moment(getDbFirstTime,"HH:mm").subtract(1,"years");
+            console.log("convertFirstTime", convertFirstTime);
         // get current time and format to hh:mm
             var getCurrTime = moment();
-            console.log(getCurrTime);
-            moment(getCurrTime).format("hh:mm");
+            console.log("getCurrTime" ,
+            moment(getCurrTime).format("hh:mm"));
         // calculate difference between first time and curr time
             var timeDiff = moment().diff(moment(convertFirstTime),"minutes");
+            console.log("timeDiff",timeDiff);
             
         // calculate time remaining
            var timeRemaining = timeDiff % getDbFreq;
+            console.log(timeRemaining);
         // calculate wait time for next train
            var waitTime = getDbFreq - timeRemaining;
+            console.log(waitTime);
+            
         // Next train arrival time
-           var trainArrival = moment().add(waitTime,"minutes");
-           addRow.append("<td>"+getChildRef.Train_Name + "</td><td>" + getChildRef.Destination + "</td><td>" + getChildRef.Frequency +"</td><td>" + trainArrival + "</td><td>" + waitTime + "</td>");
+           var nextTrainArrival = moment().add(waitTime,"minutes");
+        
+            console.log("Next Train arrival:",nextTrainArrival)
+            
+           addRow.append("<td>"+getChildRef.Train_Name + "</td><td>" + getChildRef.Destination + "</td><td>" + getChildRef.Frequency +"</td><td>" + moment(nextTrainArrival).format("hh:mm") + "</td><td>" + waitTime + "</td>");
            
             
             
