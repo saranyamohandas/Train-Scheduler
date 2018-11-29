@@ -61,21 +61,23 @@
  <form>
   <div class="form-group">
     <label for="train">Train Name</label>
-    <input type="text" class="form-control" id="TrainName" placeholder="Express">
+    <input type="text" class="form-control" id="TrainName" placeholder="Express" required>
   </div>
   <div class="form-group">
     <label for="destination">Destination</label>
-    <input type="text" class="form-control" id="destination" placeholder="SFO">
+    <input type="text" class="form-control" id="destination" placeholder="SFO" required>
   </div>
   <div class="form-group">
     <label for="firstTrain">First Train Time (HH:MM military time)</label>
-    <input type="text" class="form-control" id="firstTrainTime" placeholder="20:00">
+    <input type="text" class="form-control" id="firstTrainTime" placeholder="20:00" required>
   </div>
   <div class="form-group">
     <label for="formGroupExampleInput2">Frequency(min)</label>
-    <input type="text" class="form-control" id="freq" placeholder="30">
+    <input type="text" class="form-control" id="freq" placeholder="30" required>
   </div>
-  <button class="btn btn-primary" id="addTrain">Submit</button>
+  <button class="btn btn-primary" id="addTrain">Submit </button>
+  <p id="req">All fields are mandatory! </p> 
+  
 </form>
 </div>
 </div> 

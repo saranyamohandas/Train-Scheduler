@@ -22,13 +22,18 @@
         var getFreq = $("#freq").val();
         var getFirstTrainTime = $("#firstTrainTime").val();
         var getDest = $("#destination").val();
-       
-        database.ref().push({
+       if(getDest && getFirstTrainTime && getFreq && getTrainName){
+           database.ref().push({
             Train_Name : getTrainName,
             Frequency : getFreq,
             First_Train_Time :getFirstTrainTime,
             Destination : getDest
         })
+           
+       } else {
+           
+       }
+        
         $("input").val(" ");
 
 
