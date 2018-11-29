@@ -5,7 +5,7 @@
 ___
 
 
-### This is a train scheduler application that has been developed using the following library/framework/databse
+### This is a train scheduler application that has been developed using the following back-end and front-end technologies
 * Front-end - HTML,CSS,bootstrap,javascript,jquery,momentjs
 * back-end  - Firebase database
 
@@ -17,7 +17,7 @@ ___
   - Frequency - frequency in minutes
 * On page load, App makes connection to firebase DB and pulls the existing data and displays in table. Table displays the folowing info for the user -
    - Train Name
-   - Destinatio
+   - Destination
    - Frequency (mins)
    - Next Arrival
    - Minutes away
