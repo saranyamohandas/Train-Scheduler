@@ -34,9 +34,14 @@ table{
     margin-bottom: 10px;
 }
 .btn{
-    margin-bottom: 2px;
+    margin-bottom: 5px;
     background-color: #2290C9;
+    
 
+}
+#train-font {
+    position: absolute;
+    left: 650px;
 }
 
 

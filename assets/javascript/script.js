@@ -43,14 +43,7 @@
             var addRow = $("<tr>");
             var addData = $("<td>");
        
-//            addData.text(getChildRef.Train_Name);
-//            addRow.append(addData);
-//            addData.text(getChildRef.Destination);
-//            addRow.append(addData);
-//            addData.text(getChildRef.Frequency);
-//            addRow.append(addData);
-//            //addData.text(getChildRef.Train_Name);
-//            addRow.append(addData);
+
             $("#userData").append(addRow);
             //Calculate next arrival
         // fetch freq & firsttime from DB
@@ -80,8 +73,10 @@
             console.log("Next Train arrival:",nextTrainArrival)
             
            addRow.append("<td>"+getChildRef.Train_Name + "</td><td>" + getChildRef.Destination + "</td><td>" + getChildRef.Frequency +"</td><td>" + moment(nextTrainArrival).format("hh:mm") + "</td><td>" + waitTime + "</td>");
-           
-            
+//            $("#userData").on("click","td",function(){
+//                $(this).attr("contentEditable", "true");
+//           
+//            });
             
             
         
