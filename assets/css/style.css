@@ -5,11 +5,15 @@
 
 .jumbotron {
     height: 200px;
+    background-image: linear-gradient(to right,#40D7FA,#30A2BC);
+    font-family: 'Unlock', cursive;
+    
 }
+
 h3{
     position: absolute;
     left: 500px;
-    font-family: 'Adamina', serif;
+    font-family: 'Unlock', cursive;
 }
 #train-font{
     position: absolute;
